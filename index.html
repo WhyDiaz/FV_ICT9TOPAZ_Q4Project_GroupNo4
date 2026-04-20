@@ -10,12 +10,22 @@
     body { background-color: #f8f9fa; font-family: sans-serif; color: #333; }
 
     .side-bar {
-        width: 240px; height: 100vh; background: white;
-        border-right: 1px solid #ddd; position: fixed;
-        left: 0; top: 0; padding: 20px;
-        display: flex; flex-direction: column; justify-content: space-between;
-        z-index: 100;
-        }
+    width: 240px; 
+    height: 100vh; 
+    background: white;
+    border-right: 1px solid #ddd; 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    padding: 20px;
+    z-index: 1000; 
+    }
+
+    .main-content { 
+    margin-left: 240px; 
+    padding: 40px; 
+    min-width: 0; 
+}
 
     .menu-item {
         padding: 12px; margin-bottom: 5px; border-radius: 8px;
@@ -23,8 +33,6 @@
     }
 
     .menu-item.active { background: #1a1a1a; color: white; }
-
-    .main-content { margin-left: 240px; padding: 40px; }
 
     .stat-number { font-size: 32px; font-weight: 700; margin: 10px 0; }
 
