@@ -10,16 +10,24 @@
         body { background-color: #f8f9fa; font-family: sans-serif; color: #333; }
 
         .side-bar {
-        width: 240px; height: 100vh; background: white;
-        border-right: 1px solid #ddd; position: fixed; padding: 20px;
-    }
+            width: 240px; height: 100vh; background: white;
+            border-right: 1px solid #ddd; position: fixed; 
+            left: 0; top: 0; padding: 20px;
+            display: flex; flex-direction: column; justify-content: space-between;
+            z-index: 100;
+        }
 
         .menu-item {
         padding: 12px; margin-bottom: 5px; border-radius: 8px;
         text-decoration: none; color: #666; display: block; font-weight: 500;
     }
 
-    .menu-item.active { background: #1a1a1a; color: white; }
+        .menu-item.active { background: #1a1a1a; color: white; }
+
+        .profile-footer { border-top: 1px solid #eee; padding-top: 20px; }
+        
+        .avatar { width: 40px; height: 40px; background: #1a1a1a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 10px; }
+
       </style>
 </head>
 <body>
@@ -35,6 +43,15 @@
         <a href="NOTHING" class="menu-item">Profile</a>
     </nav>
 </div>
+
+<div class="profile-footer d-flex align-items-center">
+            <div class="avatar">ED</div>
+            <div>
+                <div class="fw-bold small">Eran Diaz</div>
+                <div class="text-muted" style="font-size: 10px;">eran.diaz@something.edu</div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
