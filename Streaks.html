@@ -9,20 +9,21 @@
 
         body { background-color: #f8f9fa; font-family: sans-serif; color: #333; }
 
-        .side-bar {
-            width: 240px; height: 100vh; background: white;
-            border-right: 1px solid #ddd; position: fixed; 
-            left: 0; top: 0; padding: 20px;
-            display: flex; flex-direction: column; justify-content: space-between;
-            z-index: 100;
-        }
-        
+       .side-bar {
+        width: 240px; height: 100vh; background: white;
+        border-right: 1px solid #ddd; position: fixed; padding: 20px;
+    }
+
         .menu-item {
-            padding: 12px; margin-bottom: 5px; border-radius: 8px;
-            text-decoration: none; color: #666; display: block; font-weight: 500;
-        }
+        padding: 12px; margin-bottom: 5px; border-radius: 8px;
+        text-decoration: none; color: #666; display: block; font-weight: 500;
+    }
+
         .menu-item.active { background: #1a1a1a; color: white; }
 
+        .profile-footer { border-top: 1px solid #eee; padding-top: 20px; }
+        
+        .avatar { width: 40px; height: 40px; background: #1a1a1a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 10px; }
 
         .profile-footer { border-top: 1px solid #eee; padding-top: 20px; }
         
@@ -35,9 +36,6 @@
             border-radius: 8px;
             transition: background 0.2s;
         }
-        .profile-link:hover { background-color: #f8f9fa; }
-
-        .avatar { width: 38px; height: 38px; background: #1a1a1a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 10px; font-size: 14px; }
 
         .logout-link { 
             color: #6b7280; 
@@ -50,34 +48,6 @@
             margin-top: 10px;
         }
 
-        .main-content { margin-left: 240px; padding: 40px; min-height: 100vh; }
-
-        .calendar-card { background: white; padding: 30px; border-radius: 16px; border: 1px solid #eee; margin-bottom: 20px; }
-        
-        .calendar-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; text-align: center; }
-        
-        .day-name { font-weight: 600; color: #999; font-size: 14px; padding-bottom: 15px; }
-        
-        .date-box { 
-            aspect-ratio: 1 / 1; border: 1px solid #f0f0f0; border-radius: 12px; 
-            display: flex; flex-direction: column; align-items: flex-start; 
-            padding: 10px; font-weight: 500; position: relative; overflow: hidden;
-        }
-
-        .date-box.today { background: #1a1a1a; color: white; border: none; }
-
-        .event-span {
-            background-color: #f2d7d7; color: #8b0000; font-size: 9px;
-            padding: 2px 4px; border-radius: 4px; width: 100%;
-            text-align: left; margin-top: 4px; line-height: 1;
-        }
-        .bg-report { background-color: #e0e4f5; color: #4a55a2; }
-        
-
-        .bg-deadline { background-color: #ff4d4f; }
-        .bg-exam { background-color: #722ed1; }
-        .bg-event { background-color: #4a55a2; }
-
 
       </style>
 </head>
@@ -86,11 +56,11 @@
       <div class="side-bar">
     <h4 class="fw-bold mb-4">Student Portal</h4>
     <nav>
-        <a href="DashBoard.html
-        " class="menu-item">Dashboard</a>
+        <a href="DashBoard.html" class="menu-item">Dashboard</a>
         <a href="virtualnotebook.html" class="menu-item">Notebooks</a>
         <a href="Streaks.html" class="menu-item active">Streaks</a>
         <a href="Study Tools.html" class="menu-item">Study Tools</a>
+        <a href="Profile Page.html" class="menu-item">Profile</a>
         <a href="Calendar.html" class="menu-item">Calendar</a>
     </nav>
 </div>
