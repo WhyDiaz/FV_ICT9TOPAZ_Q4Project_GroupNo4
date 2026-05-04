@@ -25,6 +25,18 @@
         
         .avatar { width: 40px; height: 40px; background: #1a1a1a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 10px; }
 
+        .profile-footer { border-top: 1px solid #eee; padding-top: 20px; }
+        
+        .profile-link { 
+            text-decoration: none; 
+            color: inherit; 
+            display: flex; 
+            align-items: center; 
+            padding: 5px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+
       </style>
 </head>
 <body>
@@ -41,12 +53,20 @@
     </nav>
 </div>
 
-<div class="profile-footer d-flex align-items-center">
-            <div class="avatar">ED</div>
-            <div>
-                <div class="fw-bold small">Eran Diaz</div>
-                <div class="text-muted" style="font-size: 10px;">eran.diaz@something.edu</div>
-            </div>
+ <div class="profile-footer">
+
+            <a href="Profile Page.html" class="profile-link">
+                <div class="avatar">ED</div>
+                <div>
+                    <div class="fw-bold small">Eran Diaz</div>
+                    <div class="text-muted" style="font-size: 10px;">eran.diaz@</div>
+                </div>
+            </a>
+            
+
+            <a href="index.html" class="logout">
+                <span class="me-2">Log out now</span>
+            </a>
         </div>
     </div>
 
