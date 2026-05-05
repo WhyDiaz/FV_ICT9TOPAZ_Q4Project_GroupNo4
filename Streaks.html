@@ -32,6 +32,35 @@
             margin-top: 10px;
         }
 
+                .profile-link { text-decoration: none; color: inherit; display: flex; align-items: center; padding: 5px; border-radius: 8px; }
+        .user-avatar { width: 38px; height: 38px; background: #1a1a1a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 12px; font-size: 14px; }
+        .logout-link { color: #6b7280; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 12px 5px; font-weight: 500; }
+
+
+        .main-content { margin-left: 260px; padding: 40px; }
+
+ 
+        .stat-card { background: white; border: 1px solid #e5e7eb; border-radius: 16px; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .stat-label { color: #6b7280; font-size: 12px; font-weight: 600; text-transform: uppercase; }
+        .stat-value { font-size: 28px; font-weight: 700; }
+        .stat-icon { width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+
+
+        .level-card { background: white; border: 1px solid #e5e7eb; border-radius: 20px; padding: 30px; margin-top: 24px; }
+        .progress-bar-container { height: 10px; background: #f3f4f6; border-radius: 20px; margin: 20px 0; overflow: hidden; }
+        .progress-fill { height: 100%; background: #111827; width: 50%; border-radius: 20px; }
+
+
+        .reward-item { border: 1px solid #e5e7eb; border-radius: 16px; padding: 20px; margin-bottom: 12px; display: flex; align-items: center; background: white; }
+        .reward-icon { width: 50px; height: 50px; background: #f9fafb; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px; color: #9ca3af; font-size: 20px; }
+        
+
+        .leaderboard-card { background: white; border: 1px solid #e5e7eb; border-radius: 20px; padding: 24px; }
+        .leader-row { display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid #f9fafb; }
+        .leader-rank { width: 30px; font-weight: 700; color: #6b7280; }
+        .leader-rank.top-3 { color: #f59e0b; }
+        .user-highlight { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 12px; margin: 10px 0; }
+
 
       </style>
 </head>
@@ -55,22 +84,147 @@
     </div>
 </div>
 
- <div class="profile-footer">
+<div class="main-content">
+    <header class="mb-4">
+        <h2 class="fw-bold">Streaks and Party Standings</h2>
+        <p class="text-muted">Track the partys progress and earn politcal points for your Marxist journey and remuneration</p>
+    </header>
 
-            <a href="Profile Page.html" class="profile-link">
-                <div class="avatar">ED</div>
-                <div>
-                    <div class="fw-bold small">Eran Diaz</div>
-                    <div class="text-muted" style="font-size: 10px;">eran.diaz@</div>
+    <div class="row g-4">
+
+        <div class="col-lg-8">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div>
+                            <div class="stat-label">Total Points</div>
+                            <div class="stat-value">400</div>
+                        </div>
+                        <div class="stat-icon" style="background: #fffbeb;"></div>
+                    </div>
                 </div>
-            </a>
-            
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div>
+                            <div class="stat-label">Current Streak</div>
+                            <div class="stat-value">58</div>
+                        </div>
+                        <div class="stat-icon" style="background: #fff7ed;"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card">
+                        <div>
+                            <div class="stat-label">Questions</div>
+                            <div class="stat-value">47</div>
+                        </div>
+                        <div class="stat-icon" style="background: #f0f9ff;"></div>
+                    </div>
+                </div>
+            </div>
 
-            <a href="index.html" class="logout">
-                <span class="me-2">Log out now</span>
-            </a>
+            <div class="level-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4 class="fw-bold mb-1">Level: Senior Communist</h4>
+                        <p class="text-muted small mb-0">150 political points to shaped Communist</p>
+                    </div>
+                    <div class="stat-icon bg-success text-white">📈</div>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="text-end text-muted small">400 / 550 political points</div>
+            </div>
+
+
+            <div class="mt-5">
+                <h5 class="fw-bold mb-4">remuneration</h5>
+                
+                <div class="reward-item">
+                    <div class="reward-icon">🥉</div>
+                    <div class="flex-grow-1">
+                        <div class="fw-bold">3rd in the Party</div>
+                        <div class="text-muted small">Trip to the Mausoleum of Mao Zedong</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="fw-bold small">359 pts</div>
+                        <div class="text-muted" style="font-size: 11px;"></div>
+                    </div>
+                </div>
+
+                <div class="reward-item">
+                    <div class="reward-icon">🥈</div>
+                    <div class="flex-grow-1">
+                        <div class="fw-bold">2nd in the Party</div>
+                        <div class="text-muted small">Signed copy of Mao's little red book by Xi jingping</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="fw-bold small">400 pts</div>
+                    </div>
+                </div>
+                <div class="reward-item">
+                    <div class="reward-icon">🥇</div>
+                    <div class="flex-grow-1">
+                        <div class="fw-bold">1st in the Party</div>
+                        <div class="text-muted small">Meeting with Jiang Zemin</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="fw-bold small">849 pts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4">
+            <div class="leaderboard-card">
+                <h5 class="fw-bold mb-4">Party Standings</h5>
+                
+                <div class="leader-row">
+                    <div class="leader-rank top-3">1st</div>
+                    <div class="flex-grow-1 ms-2">
+                        <div class="fw-bold small">Louie Vonn</div>
+                        <div class="text-muted" style="font-size: 11px;">849 political points</div>
+                    </div>
+                </div>
+
+                <div class="user-highlight d-flex align-items-center">
+                    <div class="leader-rank">2nd</div>
+                    <div class="flex-grow-1 ms-2">
+                        <div class="fw-bold small">You</div>
+                        <div class="text-muted" style="font-size: 11px;">400 political points</div>
+                    </div>
+                    <span class="badge bg-primary rounded-pill" style="font-size: 10px;">You</span>
+                </div>
+
+                <div class="leader-row">
+                    <div class="leader-rank">3rd</div>
+                    <div class="flex-grow-1 ms-2">
+                        <div class="fw-bold small">Joaquin Castor</div>
+                        <div class="text-muted" style="font-size: 11px;">359 political points</div>
+                    </div>
+                </div>
+
+                <div class="leader-row">
+                    <div class="leader-rank">4th</div>
+                    <div class="flex-grow-1 ms-2">
+                        <div class="fw-bold small">Jericho Magsalin</div>
+                        <div class="text-muted" style="font-size: 11px;">230 political points</div>
+                    </div>
+                </div>
+
+                <div class="leader-row" style="border: none;">
+                    <div class="leader-rank">5th</div>
+                    <div class="flex-grow-1 ms-2">
+                        <div class="fw-bold small">William Harrison </div>
+                        <div class="text-muted" style="font-size: 11px;">129 political points</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 
 </body>
 </html>
