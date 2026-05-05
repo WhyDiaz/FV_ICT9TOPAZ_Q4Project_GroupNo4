@@ -21,6 +21,40 @@
 
         .menu-item.active { background: #1a1a1a; color: white; }
 
+        .sidebar-bottom { margin-top: auto; padding-top: 20px; border-top: 1px solid #f3f4f6; }
+        
+        .user-info { display: flex; align-items: center; margin-bottom: 20px; padding: 0 8px; }
+        
+        .user-avatar { width: 38px; height: 38px; background: #1a1a1a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 12px; font-size: 14px; }
+        
+        .logout-link { color: #6b7280; text-decoration: none; font-size: 14px; display: flex; align-items: center; padding: 8px 8px; font-weight: 500; }
+        
+        .logout-link:hover { color: #111827; }
+
+
+        .main-content { margin-left: 260px; padding: 40px; }
+
+
+        .profile-card { background: white; border: 1px solid #e5e7eb; border-radius: 20px; padding: 30px; height: 100%; }
+        
+
+        .main-avatar { width: 110px; height: 110px; background: #1a1a1a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: bold; margin: 0 auto 15px; }
+        
+        .stats-divider { border-top: 1px solid #f3f4f6; margin: 25px 0; }
+
+        .course-item { border: 1px solid #e5e7eb; border-radius: 15px; padding: 18px; margin-bottom: 12px; display: flex; align-items: center; }
+        
+        .info-box { background: #f9fafb; border-radius: 15px; padding: 20px; }
+        
+        .info-label { color: #6b7280; font-size: 13px; font-weight: 500; }
+        
+        .info-value { font-size: 28px; font-weight: 700; margin-top: 5px; color: #111827; }
+
+
+        .achievement { display: flex; align-items: center; margin-bottom: 20px; }
+        
+        .ach-icon { width: 36px; height: 36px; background: #fffbeb; color: #d97706; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 18px; }
+
       </style>
 </head>
 <body>
@@ -40,6 +74,175 @@
 <a href="index.html" class="logout-link">
             <span class="me-2">↪</span> Log out
         </a>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="row g-4">
+        
+
+        <div class="col-lg-4">
+            <div class="profile-card text-center mb-4">
+                <div class="main-avatar">ED</div>
+                <h4 class="fw-bold mb-1">Eran Diaz</h4>
+                <p class="text-muted small">Computer Science</p>
+                <div class="stats-divider"></div>
+                <div class="text-start">
+                    <p class="small mb-3">📧 Marxist School of Thought@....</p>
+                    <p class="small mb-3">📅 Junior Year</p>
+                    <p class="small mb-0">📖 91.22</p>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <h6 class="fw-bold mb-4">Achievements</h6>
+                <div class="achievement">
+                    <div class="ach-icon">🏅</div>
+                    <div><div class="fw-bold small">Perfect Attendance</div><div class="text-muted" style="font-size: 11px;">Spring 2025</div></div>
+                </div>
+                <div class="achievement">
+                    <div class="ach-icon">⭐</div>
+                    <div><div class="fw-bold small">2nd in Party Standing for 200 consecutive days</div><div class="text-muted" style="font-size: 11px;">200 days</div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+ 
+            <div class="profile-card mb-4">
+                <h5 class="fw-bold mb-4">Current Estimated Subject Grades</h5>
+                
+                <div class="course-item">
+                    <div class="flex-grow-1">
+                        <div class="fw-bold small">Communist History</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="text-muted" style="font-size: 11px;">Estimated Grade</div>
+                        <div class="fw-bold">97</div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="flex-grow-1">
+                        <div class="fw-bold small">Mathematics</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="text-muted" style="font-size: 11px;">Estimated Grade</div>
+                        <div class="fw-bold">90</div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="flex-grow-1">
+                        <div class="fw-bold small">Science</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="text-muted" style="font-size: 11px;">Estimated Grade</div>
+                        <div class="fw-bold">92</div>
+                    </div> 
+              
+                    <div class="course-item">
+                    <div class="flex-grow-1">
+                        <div class="fw-bold small">Filipino</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="text-muted" style="font-size: 11px;">Estimated Grade</div>
+                        <div class="fw-bold">86</div>
+                    </div> 
+
+                    <div class="course-item">
+                    <div class="flex-grow-1">
+                        <div class="fw-bold small">Leadership Training</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="text-muted" style="font-size: 11px;">Estimated Grade</div>
+                        <div class="fw-bold">87</div>
+                    </div> 
+              
+                    <div class="course-item">
+                    <div class="flex-grow-1">
+                        <div class="fw-bold small">Music and Arts</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="text-muted" style="font-size: 11px;">Estimated Grade</div>
+                        <div class="fw-bold">89</div>
+                    </div> 
+                </div>
+
+                <div class="course-item">
+                    <div class="flex-grow-1">
+                        <div class="fw-bold small">PE</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="text-muted" style="font-size: 11px;">Estimated Grade</div>
+                        <div class="fw-bold">98</div>
+                    </div> 
+              
+                    <div class="course-item">
+                    <div class="flex-grow-1">
+                        <div class="fw-bold small">TLE</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="text-muted" style="font-size: 11px;">Estimated Grade</div>
+                        <div class="fw-bold">96</div>
+                    </div> 
+                </div>
+
+                <div class="course-item">
+                    <div class="flex-grow-1">
+                        <div class="fw-bold small">Values Education</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="text-muted" style="font-size: 11px;">Estimated Grade</div>
+                        <div class="fw-bold">88</div>
+                    </div> 
+              
+                    <div class="course-item">
+                    <div class="flex-grow-1">
+                        <div class="fw-bold small">ICT</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="text-muted" style="font-size: 11px;">Estimated Grade</div>
+                        <div class="fw-bold">95</div>
+                    </div> 
+                </div>
+
+                <div class="course-item">
+                    <div class="flex-grow-1">
+                        <div class="fw-bold small">SS</div>
+                    </div>
+                    <div class="text-end">
+                        <div class="text-muted" style="font-size: 11px;">Estimated Grade</div>
+                        <div class="fw-bold">94</div>
+                    </div> 
+            </div>
+
+
+            <div class="profile-card">
+                <h5 class="fw-bold mb-4">Academic Progress</h5>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="info-box">
+                            <div class="info-label">Credits Accumulated</div>
+                            <div class="info-value">400</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-box">
+                            <div class="info-label">Estimated GWA</div>
+                            <div class="info-value">91.22</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="info-box">
+                            <div class="info-label">Party Standing</div>
+                            <div class="info-value">Top 5%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
